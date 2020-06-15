@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/graph_drawer_activity"
+  app:startDestination="@id/drawerLayoutMainFragment">
+
+  <fragment
+    android:id="@+id/drawerLayoutMainFragment"
+    android:name="com.ys.navigationui.drawerlayout.DrawerLayoutMainFragment"
+    android:label="drawerLayoutMainFragment"/>
+
+  <fragment
+    android:id="@+id/drawerLayoutSettingsFragment"
+    android:name="com.ys.navigationui.drawerlayout.DrawerLayoutSettingsFragment"
+    android:label="drawerLayoutSettingsFragment"/>
+
+
+</navigation>
