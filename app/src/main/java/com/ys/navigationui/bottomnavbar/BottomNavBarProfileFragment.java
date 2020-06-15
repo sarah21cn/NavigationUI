@@ -13,13 +13,13 @@ import com.ys.navigationui.R;
 /**
  * Created by yinshan on 2020/6/15.
  */
-public class BottomSettingsFragment extends Fragment {
+public class BottomNavBarProfileFragment extends Fragment {
 
   @Nullable
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.fragment_settings, container, false);
+    View view = inflater.inflate(R.layout.fragment_profile, container, false);
     return view;
   }
 }

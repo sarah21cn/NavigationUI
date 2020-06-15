@@ -5,17 +5,17 @@
 
   <fragment
     android:id="@+id/bottomMainFragment"
-    android:name="com.ys.navigationui.bottomnavbar.BottomMainFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomNavBarMainFragment"
     android:label="bottomMainFragment"/>
 
   <fragment
     android:id="@+id/bottomProfileFragment"
-    android:name="com.ys.navigationui.bottomnavbar.BottomProfileFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomNavBarProfileFragment"
     android:label="bottomProfileFragment"/>
 
   <fragment
     android:id="@+id/bottomSettingFragment"
-    android:name="com.ys.navigationui.bottomnavbar.BottomSettingsFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomNavBarSettingsFragment"
     android:label="bottomSettingFragment"/>
 
 </navigation>
