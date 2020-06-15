@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/graph_bottom_navbar_activity"
+  app:startDestination="@id/bottomMainFragment">
+
+  <fragment
+    android:id="@+id/bottomMainFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomMainFragment"
+    android:label="bottomMainFragment"/>
+
+  <fragment
+    android:id="@+id/bottomProfileFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomProfileFragment"
+    android:label="bottomProfileFragment"/>
+
+  <fragment
+    android:id="@+id/bottomSettingFragment"
+    android:name="com.ys.navigationui.bottomnavbar.BottomSettingsFragment"
+    android:label="bottomSettingFragment"/>
+
+</navigation>
