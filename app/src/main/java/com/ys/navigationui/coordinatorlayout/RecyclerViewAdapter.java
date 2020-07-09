@@ -13,7 +13,6 @@ import com.ys.navigationui.R;
 
 /**
  * Created by yinshan on 2020/7/9.
- * recyclerview的adapter
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
 
