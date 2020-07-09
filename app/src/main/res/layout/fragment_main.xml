@@ -25,4 +25,11 @@
     android:textAllCaps="false"
     android:text="BottomNavigationBar"/>
 
+  <Button
+    android:id="@+id/coordinator_layout_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="CoordinatorLayout"/>
+
 </LinearLayout>

@@ -18,9 +18,14 @@ public class MainFragment extends Fragment {
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_main, container, false);
-    view.findViewById(R.id.menu_btn).setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_menuActivity));
-    view.findViewById(R.id.drawer_btn).setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_drawerActivity));
-    view.findViewById(R.id.botton_navbar_btn).setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_bottomNavBarActivity));
+    view.findViewById(R.id.menu_btn).setOnClickListener(
+        Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_menuActivity));
+    view.findViewById(R.id.drawer_btn).setOnClickListener(
+        Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_drawerActivity));
+    view.findViewById(R.id.botton_navbar_btn).setOnClickListener(
+        Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_bottomNavBarActivity));
+    view.findViewById(R.id.coordinator_layout_btn).setOnClickListener(
+        Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_coordinatorLayoutActivity));
     return view;
   }
 }

@@ -20,6 +20,10 @@
     <action
       android:id="@+id/action_mainFragment_to_bottomNavBarActivity"
       app:destination="@id/bottomNavBarActivity"/>
+
+    <action
+      android:id="@+id/action_mainFragment_to_coordinatorLayoutActivity"
+      app:destination="@id/coordinatorLayoutActivity"/>
   </fragment>
 
   <activity
@@ -36,5 +40,10 @@
     android:id="@+id/bottomNavBarActivity"
     android:name="com.ys.navigationui.bottomnavbar.BottomNavBarActivity"
     android:label="bottomNavBarActivity"/>
+
+  <activity
+    android:id="@+id/coordinatorLayoutActivity"
+    android:name="com.ys.navigationui.coordinatorlayout.CoordinatorLayoutActivity"
+    android:label="coordinatorLayoutActivity"/>
 
 </navigation>

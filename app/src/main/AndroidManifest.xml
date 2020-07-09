@@ -20,6 +20,7 @@
     <activity android:name=".menu.MenuActivity"/>
     <activity android:name=".drawerlayout.DrawerLayoutActivity"/>
     <activity android:name=".bottomnavbar.BottomNavBarActivity"/>
+    <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity"/>
   </application>
 
 </manifest>
