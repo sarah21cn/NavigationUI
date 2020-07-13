@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ScrollView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -27,11 +28,12 @@ public class CoordinatorLayoutActivity extends FragmentActivity {
 
     viewPager = findViewById(R.id.view_pager);
     List<Fragment> fragmentList = new ArrayList<>();
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < 2; i++){
       RecyclerViewFragment fragment = new RecyclerViewFragment();
       fragment.setData(i);
       fragmentList.add(fragment);
     }
+    fragmentList.add(new ScrollViewFragment());
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentAdapter adapter = new FragmentAdapter(fragmentManager, 0, fragmentList);
