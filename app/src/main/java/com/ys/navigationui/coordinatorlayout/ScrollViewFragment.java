@@ -21,6 +21,8 @@ import com.ys.navigationui.R;
  */
 public class ScrollViewFragment extends Fragment {
 
+  private static final String TAG = "ScrollViewFragment";
+
   private CustomHorizontalScrollView scrollView;
   private LinearLayout viewContainer;
 
@@ -28,6 +30,7 @@ public class ScrollViewFragment extends Fragment {
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container,
       @Nullable Bundle savedInstanceState) {
+    Log.d(TAG, "onCreateView");
     View view =
         LayoutInflater.from(getContext()).inflate(R.layout.fragment_scroll_view, container, false);
     scrollView = view.findViewById(R.id.scroll_view);
@@ -71,4 +74,10 @@ public class ScrollViewFragment extends Fragment {
     }
   }
 
+
+  @Override
+  public void onDestroyView() {
+    super.onDestroyView();
+    Log.d(TAG, "onDestroyView");
+  }
 }

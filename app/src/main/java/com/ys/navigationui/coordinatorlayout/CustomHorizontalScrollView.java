@@ -2,6 +2,8 @@ package com.ys.navigationui.coordinatorlayout;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.widget.HorizontalScrollView;
 
 /**
@@ -35,5 +37,20 @@ public class CustomHorizontalScrollView extends HorizontalScrollView {
 
   public void setScrollViewListener(ScrollViewListener listener){
     this.mScrollViewListener = listener;
+  }
+
+  @Override
+  public boolean onTouchEvent(MotionEvent ev) {
+    Log.d("testIntercept", "onTouchEvent");
+    if(canScrollHorizontally(1) || canScrollHorizontally(-1)){
+      if(getParent() != null) {
+        getParent().requestDisallowInterceptTouchEvent(true);
+      }
+      Log.d("testIntercept", "onTouchEvent intercept:" + true);
+    }else{
+      getParent().requestDisallowInterceptTouchEvent(false);
+      Log.d("testIntercept", "onTouchEvent not intercept");
+    }
+    return super.onTouchEvent(ev);
   }
 }

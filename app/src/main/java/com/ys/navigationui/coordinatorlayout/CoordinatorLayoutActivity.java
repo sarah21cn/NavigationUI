@@ -21,6 +21,7 @@ public class CoordinatorLayoutActivity extends FragmentActivity {
 
   private ViewPager viewPager;
 
+
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -34,6 +35,12 @@ public class CoordinatorLayoutActivity extends FragmentActivity {
       fragmentList.add(fragment);
     }
     fragmentList.add(new ScrollViewFragment());
+
+    for(int i = 0; i < 2; i++){
+      RecyclerViewFragment fragment = new RecyclerViewFragment();
+      fragment.setData(i);
+      fragmentList.add(fragment);
+    }
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentAdapter adapter = new FragmentAdapter(fragmentManager, 0, fragmentList);
